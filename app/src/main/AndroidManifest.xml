@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 联网 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Campus_News"
+        tools:targetApi="31">
+        <activity
+            android:name=".News.CollectionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".News.CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".News.ProclamationContent"
+            android:exported="false" />
+        <activity
+            android:name=".News.Proclamation"
+            android:exported="false" />
+        <activity
+            android:name=".News.SearchResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".News.NewsContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsTest.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CollectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsTest.MyAPPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsTest.LogTest"
+            android:exported="false" />
+        <activity
+            android:name=".PublishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.campus_news.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files" />
+        </provider>
+    </application>
+
+</manifest>

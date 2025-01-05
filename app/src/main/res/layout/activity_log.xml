@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogActivity"
+    android:background="#0000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/campus_new_log" />
+        <EditText
+            android:id="@+id/btn_account"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="手机号"
+            android:text=""
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_show"
+            android:layout_gravity="center"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:shadowRadius="@integer/material_motion_duration_long_1" />
+        <EditText
+            android:id="@+id/btn_pwd"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="密码"
+            android:text=""
+            android:textSize="17sp"
+            android:background="@drawable/background_show"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/cb_remember_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"/>
+            <!--<CheckBox
+                android:id="@+id/cb_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理员"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"/>-->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Log"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="登 录"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:background="@color/theme_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/tv_forget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="忘记密码？"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_create"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="没有账号？点我注册"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

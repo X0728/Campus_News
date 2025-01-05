@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:title="首页"
+        android:icon="@drawable/home_">
+    </item>
+    <item
+        android:id="@+id/search"
+        android:title="搜索"
+        android:icon="@drawable/search">
+    </item>
+    <item
+        android:id="@+id/publish"
+        android:title="发布"
+        android:icon="@drawable/publish">
+    </item>
+    <item
+        android:id="@+id/myPublish"
+        android:title="我的动态"
+        android:icon="@drawable/dynamic">
+    </item>
+    <item
+        android:id="@+id/mine"
+        android:title="我的"
+        android:icon="@drawable/mine">
+    </item>
+</menu>

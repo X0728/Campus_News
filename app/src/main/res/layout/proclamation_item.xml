@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#bfbfbf"/>
+        <TextView
+            android:id="@+id/proclamation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  公告：本周三系统将进行停机更新！"
+            android:textSize="18sp"
+            android:textColor="#673AB7"
+            android:textStyle="italic"
+            android:background="#e6e6e6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#e6e6e6">
+            <TextView
+                android:id="@+id/proclamation_date"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:text="  发布时间：2024-2-26"
+                android:textSize="15sp"/>
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/next"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
